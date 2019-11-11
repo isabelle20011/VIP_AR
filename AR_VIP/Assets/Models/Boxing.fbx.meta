@@ -1,12 +1,27 @@
 fileFormatVersion: 2
-guid: 585f5539b7c7846e9818452a273d3c6e
+guid: 6bde90e9e7bfbbc459cc98ebd31dd3f0
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Knight_diffuse
+    second: {fileID: 2800000, guid: bf997e8fa6bccb548a5d1324c81a7d85, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Knight_normal
+    second: {fileID: 2800000, guid: 6973c88bcf7c8314a9fe94e5d2da09b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Knight_specular
+    second: {fileID: 2800000, guid: cd54452037eb87545a9b5a1926298829, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
