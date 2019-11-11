@@ -1,12 +1,27 @@
 fileFormatVersion: 2
-guid: e23886880ddd047d6af16fce7b4ed47c
+guid: c48cfecd3b854614daca5d0a32538d43
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Guard_03__diffuse
+    second: {fileID: 2800000, guid: 0a0148bc1a134644c88fe6b18a9e0d29, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Guard_03__normal
+    second: {fileID: 2800000, guid: 6f76edf37ecb3ad4dbb32cfdf6df35c4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Guard_03__specular
+    second: {fileID: 2800000, guid: a0b60f655971e0743bc3a0829e1a5428, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
