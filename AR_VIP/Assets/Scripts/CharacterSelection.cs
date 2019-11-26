@@ -1,54 +1,62 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CharacterSelection : MonoBehaviour {
-    private GameObject[] characterList;
-    private int index; 
+public class CharacterSelection : MonoBehaviour
+{
+	private GameObject[] characterList;
+	private int index;
 
-    private void Start() {
-        index = PlayerPrefs.GetInt("CharacterSelected");
+	private void Start()
+	{
+		index = PlayerPrefs.GetInt("CharacterSelected");
 
-        characterList = new GameObject[transform.childCount];
-        
-        for (int i = 0; i < transform.childCount; i++) {
-            characterList[i] = transform.GetChild(i).gameObject;
-        }
+		characterList = new GameObject[transform.childCount];
 
-        foreach(GameObject character in characterList) {
-            character.SetActive(false);
-        }
+		for (int i = 0; i < transform.childCount; i++)
+		{
+			characterList[i] = transform.GetChild(i).gameObject;
+		}
 
-        if(characterList[index]) {
-            characterList[index].SetActive(true);
-        }
-    }
+		foreach (GameObject character in characterList)
+		{
+			character.SetActive(false);
+		}
 
-    public void ToggleLeft() {
-        characterList[index].SetActive(false);
+		if (characterList[index])
+		{
+			characterList[index].SetActive(true);
+		}
+	}
 
-        index--; 
-        if (index < 0) {
-            index = characterList.Length - 1;
-        }
+	public void ToggleLeft()
+	{
+		characterList[index].SetActive(false);
 
-        characterList[index].SetActive(true);
-    }
+		index--;
+		if (index < 0)
+		{
+			index = characterList.Length - 1;
+		}
 
-    public void ToggleRight() {
-        characterList[index].SetActive(false);
-        
-        index++;
-        if (index == characterList.Length) {
-            index = 0;
-        }
+		characterList[index].SetActive(true);
+	}
 
-        characterList[index].SetActive(true);
-    }
+	public void ToggleRight()
+	{
+		characterList[index].SetActive(false);
 
-    public void ConfirmCharacter() {
-        PlayerPrefs.SetInt("CharacterSelected", index);
-        SceneManager.LoadScene("PhotoboothExplanation");
-    }    
+		index++;
+		if (index == characterList.Length)
+		{
+			index = 0;
+		}
+
+		characterList[index].SetActive(true);
+	}
+
+	public void ConfirmCharacter()
+	{
+		PlayerPrefs.SetInt("CharacterSelected", index);
+		SceneManager.LoadScene("PhotoboothExplanation");
+	}
 }
