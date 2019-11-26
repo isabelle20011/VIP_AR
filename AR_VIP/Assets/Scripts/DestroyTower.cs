@@ -8,6 +8,7 @@ public class DestroyTower : MonoBehaviour, IVirtualButtonEventHandler
 	[SerializeField] private GameObject[] destroyObjects;
 	[SerializeField] private string buttonName;
 	public GameObject vbBtnObj;
+	[SerializeField] private bool red;
 
 	private void Start()
 	{
@@ -31,5 +32,29 @@ public class DestroyTower : MonoBehaviour, IVirtualButtonEventHandler
 		{
 			destroy.SetActive(!destroy.activeSelf);
 		}
+
+		if (red)
+		{
+			if (destroyObjects[0].activeSelf)
+			{
+				UpdateUi.Instance.towersRedNum++;
+			}
+			else
+			{
+				UpdateUi.Instance.towersRedNum--;
+			}
+		}
+		else
+		{
+			if (destroyObjects[0].activeSelf)
+			{
+				UpdateUi.Instance.towersBlueNum++;
+			}
+			else
+			{
+				UpdateUi.Instance.towersBlueNum--;
+			}
+		}
+		UpdateUi.Instance.UpdateUI();
 	}
 }
