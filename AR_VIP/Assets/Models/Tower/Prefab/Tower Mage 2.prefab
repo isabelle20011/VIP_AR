@@ -481,7 +481,7 @@ GameObject:
   - component: {fileID: 904312824}
   m_Layer: 0
   m_Name: Tower Mage 2
-  m_TagString: Untagged
+  m_TagString: TowerRed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -544,7 +544,9 @@ MonoBehaviour:
   - {fileID: 186884}
   - {fileID: 155950}
   - {fileID: 115800}
-  startDestroyed: 1
+  buttonName: RedTowerButton1
+  vbBtnObj: {fileID: 2044562131}
+  red: 1
 --- !u!1 &2044562131
 GameObject:
   m_ObjectHideFlags: 0
