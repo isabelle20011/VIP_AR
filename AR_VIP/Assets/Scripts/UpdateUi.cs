@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using TMPro;
 using UnityEngine;
-using TMPro;
 
 public class UpdateUi : MonoBehaviour
 {
@@ -28,9 +26,9 @@ public class UpdateUi : MonoBehaviour
 		Instance = this;
 	}
 
-    // Start is called before the first frame update
-    void Start()
-    {
+	// Start is called before the first frame update
+	void Start()
+	{
 		towersBlue = GameObject.FindGameObjectsWithTag("TowerBlue");
 		towersRed = GameObject.FindGameObjectsWithTag("TowerRed");
 		phoenixBlue = GameObject.FindGameObjectsWithTag("PhoenixBlue");
