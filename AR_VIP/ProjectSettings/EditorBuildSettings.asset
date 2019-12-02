@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/CharacterSelection.unity
+    guid: 228aeb73018c278468b4edd43a5e1781
+  - enabled: 1
+    path: Assets/Scenes/PhotoboothExplanation.unity
+    guid: 2d85458de94e3b5428a4573a61aa40da
+  - enabled: 1
     path: Assets/Scenes/PhotoScene.unity
     guid: 12ac2700b079f48d6a4954aa905cd9c5
+  - enabled: 1
+    path: Assets/Scenes/PhotoEnding.unity
+    guid: 15145b33e565c44469e604382c5cc7c0
   m_configObjects: {}
