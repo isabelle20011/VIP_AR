@@ -17,7 +17,7 @@ MonoBehaviour:
     ufoLicenseKey: QVJzcTlIZi8vLy8vQUFBQUtOdkdyeDhubTA1SHQ4dElLckdraWptU2pUNVNSRTgySHFiNzR2WFlBMmtiNUFWM0o2VVVUMEpHU3o2Z3NvcjNRbENOTUFGNENCMmViQXVML2tOY1VVR2Qyc3VtcW9wckZPelFOUzlHWjJqcmFzM1VmUG1mcVZsU3FDQUdTOEthRGgrMXB0L01UR2VicVNHQ0N3RnBFbFNLdzhXd2hXY1ZRZ1dYc2ZPVEZNZ1FTOFA2Q3k1NVhWNDFCcHR5Z1NwN0g4VEZybVBoN29QQ0h0a1kvL0Y1dFZqd0JhT2ZKQjlqTG9xV3NhbGNvMFc0L1MwRzRtNGRQaEdaeVhIeHI2VFc4TEZ3c2NaMUhLcEMxTGk1Z3ZrS1RSK054NWZxRm1OcGN0MWtNOXZ4bGFYMzNpNWJkNEQrVE45SmxYdllONmFFNGNCUUZvYUJCN0ozTTV4SktEVDNVTnRSQnBnbk16K0xiaXRUZFQ1MHFCbVA=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
+    maxSimultaneousImageTargets: 6
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
@@ -66,6 +66,6 @@ MonoBehaviour:
     autoInitTracker: 0
     autoStartTracker: 0
   webcam:
-    deviceNameSetInEditor: 
+    deviceNameSetInEditor: Logitech HD Webcam C525
     turnOffWebCam: 0
     renderTextureLayer: 30
