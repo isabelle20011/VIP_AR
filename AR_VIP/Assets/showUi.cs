@@ -15,6 +15,7 @@ public class showUi : MonoBehaviour, IVirtualButtonEventHandler
 
 	public void OnButtonPressed(VirtualButtonBehaviour vb)
 	{
+		Debug.Log("called");
 		switchCanvas();
 	}
 
